@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fitlog_bg">#0F0F0E</color>
+    <color name="fitlog_surface">#1A1A18</color>
+    <color name="fitlog_accent">#D7FF3F</color>
+</resources>
