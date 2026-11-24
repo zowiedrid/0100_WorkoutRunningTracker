@@ -29,7 +29,7 @@ Pengguna mencatat latihan beban per split (**Push**, **Pull**, **Leg**, **Core**
 
 ## Status Fitur (update tiap minggu)
 
-- [ ] Minggu 1: setup proyek, tema, desain Figma
+- [x] Minggu 1: setup proyek, tema, desain Figma
 - [ ] Minggu 2: skema MySQL, autentikasi API
 - [ ] Minggu 3: CRUDS backend
 - [ ] Minggu 4: data layer Android
