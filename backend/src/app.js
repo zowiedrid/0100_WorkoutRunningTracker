@@ -2,12 +2,14 @@ require('express-async-errors');
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const { requireAuth } = require('./auth');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.get('/health', (req, res) => res.json({ ok: true }));
+app.use('/auth', require('./routes/auth'));
 
 app.use((req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));
 // express-async-errors meneruskan error async ke handler ini
