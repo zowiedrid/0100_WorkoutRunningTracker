@@ -27,10 +27,19 @@ Pengguna mencatat latihan beban per split (**Push**, **Pull**, **Leg**, **Core**
 └── docker-compose.yml  MySQL 8.4 untuk lingkungan pengembangan
 ```
 
+## Menjalankan Database & Backend
+
+```bash
+docker compose up -d                  # MySQL 8.4 di port 3307, schema otomatis dibuat
+cd backend && cp .env.example .env && npm install && npm run seed && npm start
+```
+
+Seed membuat 20 gerakan global dan akun admin demo: `admin@fitlog.app` / `admin12345`.
+
 ## Status Fitur (update tiap minggu)
 
 - [x] Minggu 1: setup proyek, tema, desain Figma
-- [ ] Minggu 2: skema MySQL, autentikasi API
+- [x] Minggu 2: skema MySQL, autentikasi API
 - [ ] Minggu 3: CRUDS backend
 - [ ] Minggu 4: data layer Android
 - [ ] Minggu 5: login dan register
