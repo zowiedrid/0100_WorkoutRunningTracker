@@ -40,7 +40,7 @@ Seed membuat 20 gerakan global dan akun admin demo: `admin@fitlog.app` / `admin1
 
 - [x] Minggu 1: setup proyek, tema, desain Figma
 - [x] Minggu 2: skema MySQL, autentikasi API
-- [ ] Minggu 3: CRUDS backend
+- [x] Minggu 3: CRUDS backend
 - [ ] Minggu 4: data layer Android
 - [ ] Minggu 5: login dan register
 - [ ] Minggu 6: beranda, latihan, catat sesi
