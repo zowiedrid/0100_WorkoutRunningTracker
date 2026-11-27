@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 app.use('/auth', require('./routes/auth'));
+app.use('/exercises', requireAuth, require('./routes/exercises'));
 
 app.use((req, res) => res.status(404).json({ error: 'Endpoint tidak ditemukan' }));
 // express-async-errors meneruskan error async ke handler ini
